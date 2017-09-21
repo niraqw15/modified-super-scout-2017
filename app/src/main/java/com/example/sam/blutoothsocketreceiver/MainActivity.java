@@ -16,7 +16,6 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -49,12 +48,11 @@ import com.example.sam.blutoothsocketreceiver.firebase_classes.Match;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends ActionBarActivity {
-    protected SuperScoutApplication app;
+    protected NQWSuperScoutApplication app;
     Activity context;
     EditText numberOfMatch;
     EditText teamNumberOne;
@@ -222,7 +220,7 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.changeAlliance) {
             isRed = !isRed;
-            SuperScoutApplication.isRed = true;
+            NQWSuperScoutApplication.isRed = true;
             commitSharedPreferences();
             updateUI();
         }

@@ -8,17 +8,17 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".SuperScoutApplication"
+        android:name=".NQWSuperScoutApplication"
         android:allowBackup="true"
         android:clearTaskOnLaunch="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Super Scout"
+        android:label="NQW Super Scout"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="Super Scout"
+            android:label="NQW Super Scout"
             android:windowSoftInputMode="adjustPan">
-            <intent-filter>
+            <intent-filter android:label="NQW Super Scout">
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />

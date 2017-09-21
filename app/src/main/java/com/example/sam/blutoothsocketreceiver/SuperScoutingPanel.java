@@ -33,16 +33,18 @@ import java.util.Map;
 public class SuperScoutingPanel extends Fragment {
     Boolean isRed;
     public static ArrayList<Integer> Speed;
-    public static ArrayList<Integer> GearControl;
+    //public static ArrayList<Integer> GearControl;
     public static ArrayList<Integer> BallControl;
     public static ArrayList<Integer> Agility;
     public static ArrayList<Integer> Defense;
+    public static ArrayList<Integer> Torque; //TODO: completely add in/use
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         Speed = new ArrayList<>(Arrays.asList(0, 0, 3, 0, 0));
-        GearControl = new ArrayList<>(Arrays.asList(0, 0, 3, 0, 0));
+        //GearControl = new ArrayList<>(Arrays.asList(0, 0, 3, 0, 0));
+        Torque = new ArrayList<>(Arrays.asList(0, 0, 3, 0, 0)); //TODO: Check what the 3 does and if it is important
         BallControl = new ArrayList<>(Arrays.asList(3, 0, 0, 0, 0));
         Agility = new ArrayList<>(Arrays.asList(0, 0, 3, 0, 0));
         Defense = new ArrayList<>(Arrays.asList(3, 0, 0, 0, 0));

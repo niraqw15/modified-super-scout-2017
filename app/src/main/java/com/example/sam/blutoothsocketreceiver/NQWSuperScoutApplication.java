@@ -45,7 +45,7 @@ import java.util.Map;
  * Created by sam on 1/31/16.
  */
 
-public class SuperScoutApplication extends Application implements Application.ActivityLifecycleCallbacks {
+public class NQWSuperScoutApplication extends Application implements Application.ActivityLifecycleCallbacks {
     String url = Constants.dataBaseUrl;
     Map<String, String> dataBaseList = Constants.dataBases;
     public Activity currentActivity = null;

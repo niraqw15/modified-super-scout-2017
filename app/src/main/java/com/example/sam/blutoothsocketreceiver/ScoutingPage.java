@@ -140,10 +140,10 @@ public class ScoutingPage extends ActionBarActivity {
             inflateFinalDataMenu();
         }
 
-        if (id == R.id.finalNext) {
+        if (id == R.id.finalNext) { //TODO: Figure out what this is.
             boolean moreThanOne = false;
             for (int a = 1; a <= 4; a++) {
-                if (SuperScoutingPanel.Defense.get(a) > 1 || SuperScoutingPanel.Speed.get(a) > 1 || SuperScoutingPanel.GearControl.get(a) > 1 || SuperScoutingPanel.BallControl.get(a) > 1 || SuperScoutingPanel.Agility.get(a) > 1) {
+                if (SuperScoutingPanel.Defense.get(a) > 1 || SuperScoutingPanel.Speed.get(a) > 1 || /*SuperScoutingPanel.GearControl.get(a) > 1 ||*/ SuperScoutingPanel.Torque.get(a) > 1 || SuperScoutingPanel.BallControl.get(a) > 1 || SuperScoutingPanel.Agility.get(a) > 1) {
                     moreThanOne = true;
                 }
             }

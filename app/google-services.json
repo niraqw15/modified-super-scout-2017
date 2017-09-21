@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:62327054481:android:c1558a9aff456083",
         "android_client_info": {
-          "package_name": "org.citruscircuits.scout2017"
+          "package_name": "com.example.sam.blutoothsocketreceiver.debug" //was "org.citruscircuits.scout2017"
         }
       },
       "oauth_client": [

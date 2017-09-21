@@ -26,11 +26,11 @@
         custom:increment="1"/>
 
     <com.example.sam.blutoothsocketreceiver.Counter
-        android:id="@+id/GearControl"
+        android:id="@+id/Torque"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        custom:dataName="Gear Control"
+        custom:dataName="Torque"
         custom:startingValue="2"
         custom:max="4"
         custom:min="0"

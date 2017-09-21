@@ -113,10 +113,17 @@ public class Counter extends RelativeLayout {
                 SuperScoutingPanel.BallControl.set(previousValue, SuperScoutingPanel.BallControl.get(previousValue) - 1);
                 break;
             }
-            case "Gear Control" : {
+            //TODO: change gear control to torque, and find where SuperScoutingPanel.GearControl is so I can change/copy and change it
+            /* case "Gear Control" : {
                 Log.i("HATRED", "GEAR CTRL");
                 SuperScoutingPanel.GearControl.set(currentValue, SuperScoutingPanel.GearControl.get(currentValue) + 1);
                 SuperScoutingPanel.GearControl.set(previousValue, SuperScoutingPanel.GearControl.get(previousValue) - 1);
+                break;
+            } */
+            case "Torque" : {
+                Log.i("HATRED", "TORQUE");
+                SuperScoutingPanel.Torque.set(currentValue, SuperScoutingPanel.Torque.get(currentValue) + 1);
+                SuperScoutingPanel.Torque.set(previousValue, SuperScoutingPanel.Torque.get(previousValue) - 1);
                 break;
             }
             case "Speed" : {
@@ -130,7 +137,8 @@ public class Counter extends RelativeLayout {
             Log.i("ARRAYSINFO SPEED" + a, String.valueOf(SuperScoutingPanel.Speed.get(a)));
             Log.i("ARRAYSINFO DEFENSE" + a, String.valueOf(SuperScoutingPanel.Defense.get(a)));
             Log.i("ARRAYSINFO BALL CTRL" + a, String.valueOf(SuperScoutingPanel.BallControl.get(a)));
-            Log.i("ARRAYSINFO GEAR CTRL" + a, String.valueOf(SuperScoutingPanel.GearControl.get(a)));
+            //Log.i("ARRAYSINFO GEAR CTRL" + a, String.valueOf(SuperScoutingPanel.GearControl.get(a)));
+            Log.i("ARRAYSINFO TORQUE" + a, String.valueOf(SuperScoutingPanel.Torque.get(a)));
             Log.i("ARRAYSINFO AGILITY" + a, String.valueOf(SuperScoutingPanel.Agility.get(a)));
         }
     }
