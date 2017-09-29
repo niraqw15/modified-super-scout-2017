@@ -242,7 +242,9 @@ public class MainActivity extends ActionBarActivity {
 //                }
                 else {
                     commitSharedPreferences();
-                    Intent intent = new Intent(context, ScoutingPage.class);
+                    Intent intent = new Intent(context, ScoutingPage.class); //Was: "ScoutingPage.class" Needs to be: "FieldSetUp.class" TODO: Change this to FieldSetUp stuff.
+                    //Intent intent = new Intent(context, FieldSetUp.class);
+
                     intent.putExtra("matchNumber", numberOfMatch.getText().toString());
                     intent.putExtra("teamNumberOne", teamNumberOne.getText().toString());
                     intent.putExtra("teamNumberTwo", teamNumberTwo.getText().toString());
